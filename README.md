@@ -1,8 +1,6 @@
----
-title: Irrigation Automation
-...
 <!-- cSpell:enable -->
 <!-- # ESP32 Irrigation automation code -->
+# Irrigation Automation
 
 This repository contains a series of arduino sketches created while exploring the use of an ESP32 board to manage plant watering based on windshield washer pumps and capacitive soil moisture sensors. Each sketch, with supporting files, is stored in its own folder, so that the complete folder can be downloaded directly to an Arduino sketchbook folder, then opened with the IDE. The irrigation repo folder can be treated like an Arduino sketchbook. This is a bit different that the usual git repository, in that "versions" are new folders. Previous versions are still visible in there own folders. This is done to make it easy to browse through the progression, and look at intermediate research.
 
@@ -25,6 +23,8 @@ Some code blocks «will» also have examples and additional backround informatio
 * [pump7](#link_pump7)
 * [pump8](#link_pump8)
 * [pump9](#link_pump9)
+* [analog mapping](#link_analog_mapping)
+* [devkit v1 30 pinout](#link_devkit30_pinout)
 
 <!--
 * [Link](#link_link)
@@ -173,6 +173,24 @@ Adjust state transition processing logic to remove unneeded transient states. Si
 * remove most transient states
 * refactor to more generic 'resource' wait, instead of power wait.
 * implement emergency shutdown. use when code detects inconsistent state.
+
+## <a name="link_analog_mapping">⚓</a> analog mapping
+
+Figure out which GPIO (digital) pin numbers are associated with each of the analog (A«n») pins used for the standard Arduino analogRead() function. The sketch maps A0 through 13 to the pin numbers. A14 is not defined. This matched to all of the known ADC1 and ADC2 pins, EXCEPT for ADC2 CH2, which is GPIO 2. No A«n» identifier was found for that analog pin.
+
+```txt
+A0…13: 26 25 34 39 36 4 14 32 15 33 27 12 13 35
+```
+
+## <a name="link_devkit30_pinout">⚓</a> devkit v1 30 pinout
+
+Create an extended svg version of pinout diagrams found for the 30 pin ESP32 DevKit V1 board. That is often (incorrectly) labeled as the 30 GPIO version. It is really 25 GPIO plus power, ground, and enable pins.
+
+<!--
+ can not set a good width using standard markdown, so use html instead
+![ESP32 DevKit V1 30 pin board pinout](devkit_v1_30_pinout.svg)
+ -->
+<img src="devkit_v1_30_pinout.svg" alt="ESP32 DevKit V1 30 pin board pinout" width="100%"/>
 
 <!-- cSpell:disable -->
 <!-- cSpell:enable -->

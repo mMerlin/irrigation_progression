@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.2"
+  height="2.41in"
+  width="4.51in"
+  viewBox="0 0 4510 2410"
+>
+<!--
+  https://microcontrollerslab.com/wp-content/uploads/2019/03/ESP32-ADC-channels-pinout.jpg
+ -->
+  <desc>ESP32 DevKit V1 — DOIT</desc>
+  <desc>https://randomnerdtutorials.com/getting-started-with-esp32/</desc>
+  <desc>https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png
+</desc>
+  <g font-family="DROID SANS" text-anchor="middle">
+  <rect width="4510" height="2410" fill="#ffffff" stroke="none"/>
+  <!-- <g transform="translate(-110 -196)">
+    <image width="966" height="574" xlink:href="_hpd_assets/ESP32-DOIT-DEVKIT-V1-Board-Pinout-30-GPIOs-Copy.png" transform="scale(4.55 4.55)" opacity="0.93"/>
+  </g> -->
+  <text x="2243" y="130" font-size="162" fill="#112f6b" stroke="#112f6b" stroke-width="5">ESP32 DEVKIT V1</text>
+  <text x="2243" y="275" font-size="112" fill="#112f6b" stroke="#112f6b" stroke-width="2">30 pin version</text>
+  <g transform="translate(1670 340)" font-size="56" fill="#000000" stroke-width="5" opacity="0.99">
+    <rect width="1125" height="2048" rx="50" stroke="none"/>
+    <g fill="white">
+      <circle cx="0073" cy="0075" r="50" stroke="none"/>
+      <circle cx="1052" cy="0075" r="50" stroke="none"/>
+      <circle cx="0073" cy="1984" r="50" stroke="none"/>
+      <circle cx="1052" cy="1984" r="50" stroke="none"/>
+
+      <circle cx="43" cy="300" r="15" stroke="none"/>
+      <circle cx="43" cy="400" r="15" stroke="none"/>
+      <circle cx="43" cy="500" r="15" stroke="none"/>
+      <circle cx="43" cy="600" r="15" stroke="none"/>
+      <circle cx="43" cy="700" r="15" stroke="none"/>
+      <circle cx="43" cy="800" r="15" stroke="none"/>
+      <circle cx="43" cy="900" r="15" stroke="none"/>
+      <circle cx="43" cy="1000" r="15" stroke="none"/>
+      <circle cx="43" cy="1100" r="15" stroke="none"/>
+      <circle cx="43" cy="1200" r="15" stroke="none"/>
+      <circle cx="43" cy="1300" r="15" stroke="none"/>
+      <circle cx="43" cy="1400" r="15" stroke="none"/>
+      <circle cx="43" cy="1500" r="15" stroke="none"/>
+      <circle cx="43" cy="1600" r="15" stroke="none"/>
+      <circle cx="43" cy="1700" r="15" stroke="none"/>
+
+      <circle cx="1080" cy="300" r="15" stroke="none"/>
+      <circle cx="1080" cy="400" r="15" stroke="none"/>
+      <circle cx="1080" cy="500" r="15" stroke="none"/>
+      <circle cx="1080" cy="600" r="15" stroke="none"/>
+      <circle cx="1080" cy="700" r="15" stroke="none"/>
+      <circle cx="1080" cy="800" r="15" stroke="none"/>
+      <circle cx="1080" cy="900" r="15" stroke="none"/>
+      <circle cx="1080" cy="1000" r="15" stroke="none"/>
+      <circle cx="1080" cy="1100" r="15" stroke="none"/>
+      <circle cx="1080" cy="1200" r="15" stroke="none"/>
+      <circle cx="1080" cy="1300" r="15" stroke="none"/>
+      <circle cx="1080" cy="1400" r="15" stroke="none"/>
+      <circle cx="1080" cy="1500" r="15" stroke="none"/>
+      <circle cx="1080" cy="1600" r="15" stroke="none"/>
+      <circle cx="1080" cy="1700" r="15" stroke="none"/>
+    </g>
+    <rect x="210" width="720" height="263" fill="#262626"/>
+    <path stroke="#aeaeae" stroke-width="10" fill="none" d="m268 230v-190h85v85h85v-85h85v85h85v-85h85m0 185v-185h85v185"/>
+    <path stroke="none" fill="#c3c3c3" opacity="0.5" d="
+      m277 263 v6
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v15h-15v25h15
+      v40h100
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      v20h25v-20h15
+      h82v-22
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-15h15v-25h-15
+      v-24z
+    "/>
+    <text x="558" y="585" stroke="none" fill="#181818" font-size="76">ESP-WROOM-32</text>
+    <rect x="190" y="1870" width="93" height="130" fill="#c9c9c9"/>
+    <rect x="198" y="1878" width="77" height="114" stroke="#000000" stroke-width="4" fill="#555555" opacity="0.1"/>
+    <circle cx="237" cy="1934" r="26" fill="black"/>
+    <text transform="rotate(-90 352,1934)" x="352" y="1934" stroke="none" fill="#ffffff" font-size="54">EN</text>
+    <path fill="#e4e4e4" d="m455 1870v182h10v-6h200v6h10v-191h-60v8h-98v-8h-55z"/>
+    <text x="558" y="585" stroke="none" fill="#181818" font-size="76">ESP-WROOM-32</text>
+    <rect x="850" y="1870" width="93" height="130" fill="#c9c9c9"/>
+    <rect x="858" y="1878" width="77" height="114" stroke="#000000" stroke-width="4" fill="#555555" opacity="0.1"/>
+    <circle cx="897" cy="1934" r="26" fill="black"/>
+    <text transform="rotate(-90 830,1932)" x="830" y="1932" stroke="none" fill="#ffffff" font-size="54">BOOT</text>
+
+    <g transform="translate(-1400 1561)" fill="#dddddd">
+      <rect y="200" width="100" height="70" rx="9" stroke="#ffff00"/>
+      <rect y="100" width="100" height="70" rx="9" stroke="#0000ff"/>
+      <rect x="2900" y="100" width="100" height="70" rx="9" stroke="#c614dd"/>
+      <rect x="2900" y="200" width="100" height="70" rx="9" stroke="#ff7700"/>
+      <rect x="2900" y="300" width="100" height="70" rx="9" stroke="#00cc00"/>
+      <g transform="translate(120 54)" text-anchor="start" fill="#000000">
+        <text y="200">Input Only; no internal pull«up|down» resistors</text>
+        <text y="100">boot fail if pulled high</text>
+        <text x="2900" y="100">output only; debug output at boot</text>
+        <text x="2900" y="200">input only; HIGH at boot</text>
+        <text x="2900" y="300">connected to on-board LED</text>
+      </g>
+    </g>
+
+    <g transform="translate(-280 161)">
+      <g fill="#dddddd" stroke="#000000">
+        <rect y="0100" width="260" height="70" rx="9" fill="#ffffff"/>
+        <rect y="0200" width="260" height="70" rx="9" stroke="#ffff00"/>
+        <rect y="0300" width="260" height="70" rx="9" stroke="#ffff00"/>
+        <rect y="0400" width="260" height="70" rx="9" stroke="#ffff00"/>
+        <rect y="0500" width="260" height="70" rx="9" stroke="#ffff00"/>
+        <rect y="0600" width="260" height="70" rx="9"/>
+        <rect y="0700" width="260" height="70" rx="9"/>
+        <rect y="0800" width="260" height="70" rx="9"/>
+        <rect y="0900" width="260" height="70" rx="9"/>
+        <rect y="1000" width="260" height="70" rx="9"/>
+        <rect y="1100" width="260" height="70" rx="9"/>
+        <rect y="1200" width="260" height="70" rx="9" stroke="#0000ff"/>
+        <rect y="1300" width="260" height="70" rx="9"/>
+        <rect y="1400" width="260" height="70" rx="9" fill="black"/>
+        <rect y="1500" width="260" height="70" rx="9" fill="#ff9900"/>
+      </g>
+      <g transform="translate(130 54)" stroke="none" text-anchor="middle">
+        <text y="0100">EN</text>
+        <text y="0200">GPI 36</text>
+        <text y="0300">GPI 39</text>
+        <text y="0400">GPI 34</text>
+        <text y="0500">GPI 35</text>
+        <text y="0600">GPIO 32</text>
+        <text y="0700">GPIO 33</text>
+        <text y="0800">GPIO 25</text>
+        <text y="0900">GPIO 26</text>
+        <text y="1000">GPIO 27</text>
+        <text y="1100">GPIO 14</text>
+        <text y="1200">GPIO 12</text>
+        <text y="1300">GPIO 13</text>
+        <text y="1400" fill="#ffffff">GND</text>
+        <text y="1500" fill="#ffffff">VIN</text>
+      </g>
+    </g>
+
+    <g transform="translate(-425 161)">
+      <g fill="#ddeeff" stroke="#000000">
+        <rect y="0200" width="120" height="70" rx="9"/>
+        <rect y="0300" width="120" height="70" rx="9"/>
+        <rect y="0400" width="120" height="70" rx="9"/>
+        <rect y="0500" width="120" height="70" rx="9"/>
+        <rect y="0600" width="120" height="70" rx="9"/>
+        <rect y="0700" width="120" height="70" rx="9"/>
+        <rect y="0800" width="120" height="70" rx="9"/>
+        <rect y="0900" width="120" height="70" rx="9"/>
+        <rect y="1000" width="120" height="70" rx="9"/>
+        <rect y="1100" width="120" height="70" rx="9"/>
+        <rect y="1200" width="120" height="70" rx="9"/>
+        <rect y="1300" width="120" height="70" rx="9"/>
+      </g>
+      <g transform="translate(60 54)" stroke="none" text-anchor="middle">
+        <text y="0200">A4</text>
+        <text y="0300">A3</text>
+        <text y="0400">A2</text>
+        <text y="0500">A13</text>
+        <text y="0600">A7</text>
+        <text y="0700">A9</text>
+        <text y="0800">A1</text>
+        <text y="0900">A0</text>
+        <text y="1000">A10</text>
+        <text y="1100">A6</text>
+        <text y="1200">A11</text>
+        <text y="1300">A12</text>
+      </g>
+    </g>
+
+    <g transform="translate(-715 161)">
+      <g fill="#ddeeff" stroke="#000000">
+        <rect y="0200" width="270" height="70" rx="9"/>
+        <rect y="0300" width="270" height="70" rx="9"/>
+        <rect y="0400" width="270" height="70" rx="9"/>
+        <rect y="0500" width="270" height="70" rx="9"/>
+        <rect y="0600" width="270" height="70" rx="9"/>
+        <rect y="0700" width="270" height="70" rx="9"/>
+        <rect y="0800" width="270" height="70" rx="9"/>
+        <rect y="0900" width="270" height="70" rx="9"/>
+        <rect y="1000" width="270" height="70" rx="9"/>
+        <rect y="1100" width="270" height="70" rx="9"/>
+        <rect y="1200" width="270" height="70" rx="9"/>
+        <rect y="1300" width="270" height="70" rx="9"/>
+      </g>
+      <g transform="translate(135 54)" stroke="none" text-anchor="middle">
+        <text y="0200">ADC1 CH0</text>
+        <text y="0300">ADC1 CH3</text>
+        <text y="0400">ADC1 CH6</text>
+        <text y="0500">ADC1 CH7</text>
+        <text y="0600">ADC1 CH4</text>
+        <text y="0700">ADC1 CH5</text>
+        <text y="0800">ADC2 CH8</text>
+        <text y="0900">ADC2 CH9</text>
+        <text y="1000">ADC2 CH7</text>
+        <text y="1100">ADC2 CH6</text>
+        <text y="1200">ADC2 CH5</text>
+        <text y="1300">ADC2 CH4</text>
+      </g>
+    </g>
+
+    <g transform="translate(-1025 161)">
+      <g fill="#a0ffa0" stroke="#000000">
+        <rect y="0200" width="290" height="70" rx="9" fill="#c8f739"/>
+        <rect y="0300" width="290" height="70" rx="9" fill="#c8f739"/>
+        <rect y="0600" width="290" height="70" rx="9" fill="#c8f739"/>
+        <rect y="0700" width="290" height="70" rx="9" fill="#c8f739"/>
+        <rect y="0800" width="290" height="70" rx="9" fill="#f3b388"/>
+        <rect y="0900" width="290" height="70" rx="9" fill="#f3b388"/>
+        <rect y="1100" width="290" height="70" rx="9"/>
+        <rect y="1200" width="290" height="70" rx="9"/>
+        <rect y="1300" width="290" height="70" rx="9"/>
+      </g>
+      <g transform="translate(145 54)" stroke="none" text-anchor="middle">
+        <text y="0200">Sensor VP</text>
+        <text y="0300">Sensor VN</text>
+        <text y="0600">32K XTAL P</text>
+        <text y="0700">32K XTAL N</text>
+        <text y="0800">DAC 1</text>
+        <text y="0900">DAC 2</text>
+        <text y="1100">HSPI CLK</text>
+        <text y="1200">HSPI MISO</text>
+        <text y="1300">HSPI MOSI</text>
+      </g>
+    </g>
+
+    <g transform="translate(-1365 161)">
+      <g fill="#f7c709" stroke="#000000">
+        <rect y="0200" width="320" height="70" rx="9"/>
+        <rect y="0300" width="320" height="70" rx="9"/>
+        <rect y="0400" width="320" height="70" rx="9"/>
+        <rect y="0500" width="320" height="70" rx="9"/>
+        <rect y="0600" width="320" height="70" rx="9"/>
+        <rect y="0700" width="320" height="70" rx="9"/>
+        <rect y="0800" width="320" height="70" rx="9"/>
+        <rect y="0900" width="320" height="70" rx="9"/>
+        <rect y="1000" width="320" height="70" rx="9"/>
+        <rect y="1100" width="320" height="70" rx="9"/>
+        <rect y="1200" width="320" height="70" rx="9"/>
+        <rect y="1300" width="320" height="70" rx="9"/>
+      </g>
+      <g transform="translate(160 54)" stroke="none" text-anchor="middle">
+        <text y="0200">RTC GPIO0</text>
+        <text y="0300">RTC GPIO3</text>
+        <text y="0400">RTC GPIO4</text>
+        <text y="0500">RTC GPIO5</text>
+        <text y="0600">RTC GPIO9</text>
+        <text y="0700">RTC GPIO8</text>
+        <text y="0800">RTC GPIO6</text>
+        <text y="0900">RTC GPIO7</text>
+        <text y="1000">RTC GPIO17</text>
+        <text y="1100">RTC GPIO16</text>
+        <text y="1200">RTC GPIO15</text>
+        <text y="1300">RTC GPIO14</text>
+      </g>
+    </g>
+
+    <g transform="translate(-1655 161)">
+      <g fill="#fc9dfc" stroke="#000000">
+        <rect y="0600" width="270" height="70" rx="9"/>
+        <rect y="0700" width="270" height="70" rx="9"/>
+        <rect y="1000" width="270" height="70" rx="9"/>
+        <rect y="1100" width="270" height="70" rx="9"/>
+        <rect y="1200" width="270" height="70" rx="9"/>
+        <rect y="1300" width="270" height="70" rx="9"/>
+      </g>
+      <g transform="translate(135 54)" stroke="none" text-anchor="middle">
+        <text y="0600">TOUCH 9</text>
+        <text y="0700">TOUCH 8</text>
+        <text y="1000">TOUCH 7</text>
+        <text y="1100">TOUCH 6</text>
+        <text y="1200">TOUCH 5</text>
+        <text y="1300">TOUCH 4</text>
+      </g>
+    </g>
+
+    <g transform="translate(1140 161)">
+      <g fill="#dddddd" stroke="#000000">
+        <rect y="0100" width="260" height="70" rx="9"/>
+        <rect y="0200" width="260" height="70" rx="9"/>
+        <rect y="0300" width="260" height="70" rx="9" stroke="#c614dd"/>
+        <rect y="0400" width="260" height="70" rx="9" stroke="#ff7700"/>
+        <rect y="0500" width="260" height="70" rx="9"/>
+        <rect y="0600" width="260" height="70" rx="9"/>
+        <rect y="0700" width="260" height="70" rx="9"/>
+        <rect y="0800" width="260" height="70" rx="9"/>
+        <rect y="0900" width="260" height="70" rx="9"/>
+        <rect y="1000" width="260" height="70" rx="9"/>
+        <rect y="1100" width="260" height="70" rx="9"/>
+        <rect y="1200" width="260" height="70" rx="9" stroke="#00cc00"/>
+        <rect y="1300" width="260" height="70" rx="9"/>
+        <rect y="1400" width="260" height="70" rx="9" fill="#000000"/>
+        <rect y="1500" width="260" height="70" rx="9" fill="#ff0000"/>
+      </g>
+      <g transform="translate(130 54)" stroke="none" text-anchor="middle">
+        <text y="0100">GPIO 23</text>
+        <text y="0200">GPIO 22</text>
+        <text y="0300">GPIO 1</text>
+        <text y="0400">GPIO 3</text>
+        <text y="0500">GPIO 21</text>
+        <text y="0600">GPIO 19</text>
+        <text y="0700">GPIO 18</text>
+        <text y="0800">GPIO 5</text>
+        <text y="0900">GPIO 17</text>
+        <text y="1000">GPIO 16</text>
+        <text y="1100">GPIO 4</text>
+        <text y="1200">GPIO 2</text>
+        <text y="1300">GPIO 15</text>
+        <text y="1400" fill="#ffffff">GND</text>
+        <text y="1500" fill="#ffffff">3V3</text>
+      </g>
+    </g>
+
+    <g transform="translate(1420 161)">
+      <g fill="#ddeeff" stroke="#000000">
+        <rect y="1100" width="120" height="70" rx="9"/>
+        <rect y="1200" width="120" height="70" rx="9"/>
+        <rect y="1300" width="120" height="70" rx="9"/>
+      </g>
+      <g transform="translate(60 54)" stroke="none" text-anchor="middle">
+        <text y="1100">A5</text>
+        <text y="1200">A?</text>
+        <text y="1300">A8</text>
+      </g>
+    </g>
+
+    <g transform="translate(1560 161)">
+      <g fill="#ddeeff" stroke="#000000">
+        <rect y="1100" width="320" height="70" rx="9"/>
+        <rect y="1200" width="320" height="70" rx="9"/>
+        <rect y="1300" width="320" height="70" rx="9"/>
+      </g>
+      <g transform="translate(160 54)" stroke="none" text-anchor="middle">
+        <text y="1100">ADC2 CH0</text>
+        <text y="1200">ADC2 CH2</text>
+        <text y="1300">ADC2 CH3</text>
+      </g>
+    </g>
+
+    <g transform="translate(1900 161)">
+      <g fill="#a0ffa0" stroke="#000000">
+        <rect y="0100" width="290" height="70" rx="9"/>
+        <rect y="0200" width="290" height="70" rx="9" fill="#81dfff"/>
+        <rect y="0300" width="290" height="70" rx="9" fill="#ffff99"/>
+        <rect y="0400" width="290" height="70" rx="9" fill="#ffff99"/>
+        <rect y="0500" width="290" height="70" rx="9" fill="#81dfff"/>
+        <rect y="0600" width="290" height="70" rx="9"/>
+        <rect y="0700" width="290" height="70" rx="9"/>
+        <rect y="0800" width="290" height="70" rx="9"/>
+        <rect y="0900" width="290" height="70" rx="9" fill="#ffff99"/>
+        <rect y="1000" width="290" height="70" rx="9" fill="#ffff99"/>
+        <rect y="1300" width="290" height="70" rx="9"/>
+      </g>
+      <g transform="translate(145 54)" stroke="none" text-anchor="middle">
+        <text y="0100">VSPI MOSI</text>
+        <text y="0200">I2C SCL</text>
+        <text y="0300">UART 0 TX</text>
+        <text y="0400">UART 0 RX</text>
+        <text y="0500">I2C SDA</text>
+        <text y="0600">VSPI MISO</text>
+        <text y="0700">VSPI CLK</text>
+        <text y="0800">VSPI CSO</text>
+        <text y="0900">UART 2 TX</text>
+        <text y="1000">UART 2 RX</text>
+        <text y="1300">HSPI CSO</text>
+      </g>
+    </g>
+
+    <g transform="translate(2550 161)">
+      <g fill="#fc9dfc" stroke="#000000">
+        <rect y="1100" width="270" height="70" rx="9"/>
+        <rect y="1200" width="270" height="70" rx="9"/>
+        <rect y="1300" width="270" height="70" rx="9"/>
+      </g>
+      <g transform="translate(135 54)" stroke="none" text-anchor="middle">
+        <text y="1100">TOUCH 0</text>
+        <text y="1200">TOUCH 2</text>
+        <text y="1300">TOUCH 3</text>
+      </g>
+    </g>
+
+    <g transform="translate(2210 161)">
+      <g fill="#f7c709" stroke="#000000">
+        <rect y="1100" width="320" height="70" rx="9"/>
+        <rect y="1200" width="320" height="70" rx="9"/>
+        <rect y="1300" width="320" height="70" rx="9"/>
+      </g>
+      <g transform="translate(160 54)" stroke="none" text-anchor="middle">
+        <text y="1100">RTC GPIO10</text>
+        <text y="1200">RTC GPIO12</text>
+        <text y="1300">RTC GPIO13</text>
+      </g>
+    </g>
+
+  </g>
+  </g>
+</svg>
