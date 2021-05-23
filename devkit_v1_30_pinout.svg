@@ -10,6 +10,24 @@
 >
 <!--
   https://microcontrollerslab.com/wp-content/uploads/2019/03/ESP32-ADC-channels-pinout.jpg
+// DOIT ESP32 DEVKIT V1 (esp32)
+// 36=A0
+// 39=A3
+// 34=A6
+// 35=A7
+// 32=A4
+// 33=A5
+// 25=A18
+// 26=A19
+// 27=A17
+// 14=A16
+// 12=A15
+// 13=A14
+
+// 4=A10
+// 2=A12
+// 15=A13
+// 0=A11
  -->
   <desc>ESP32 DevKit V1 — DOIT</desc>
   <desc>https://randomnerdtutorials.com/getting-started-with-esp32/</desc>
@@ -120,18 +138,19 @@
     <circle cx="897" cy="1934" r="26" fill="black"/>
     <text transform="rotate(-90 830,1932)" x="830" y="1932" stroke="none" fill="#ffffff" font-size="54">BOOT</text>
 
-    <g transform="translate(-1400 1561)" fill="#dddddd">
+    <g transform="translate(-1440 1561)" fill="#dddddd">
       <rect y="200" width="100" height="70" rx="9" stroke="#ffff00"/>
       <rect y="100" width="100" height="70" rx="9" stroke="#0000ff"/>
-      <rect x="2900" y="100" width="100" height="70" rx="9" stroke="#c614dd"/>
-      <rect x="2900" y="200" width="100" height="70" rx="9" stroke="#ff7700"/>
-      <rect x="2900" y="300" width="100" height="70" rx="9" stroke="#00cc00"/>
+      <rect x="2940" y="100" width="100" height="70" rx="9" stroke="#c614dd"/>
+      <rect x="2940" y="200" width="100" height="70" rx="9" stroke="#ff7700"/>
+      <rect x="2940" y="300" width="100" height="70" rx="9" stroke="#00cc00"/>
       <g transform="translate(120 54)" text-anchor="start" fill="#000000">
-        <text y="200">Input Only; no internal pull«up|down» resistors</text>
         <text y="100">boot fail if pulled high</text>
-        <text x="2900" y="100">output only; debug output at boot</text>
-        <text x="2900" y="200">input only; HIGH at boot</text>
-        <text x="2900" y="300">connected to on-board LED</text>
+        <text y="200">Input Only; no internal pull«up|down» resistors</text>
+        <text y="300">A11 = GPIO0, ADC2_CH1, Touch 1; not on any pin</text>
+        <text x="2940" y="100">output only; debug output at boot</text>
+        <text x="2940" y="200">input only; HIGH at boot</text>
+        <text x="2940" y="300">connected to on-board LED</text>
       </g>
     </g>
 
@@ -188,18 +207,18 @@
         <rect y="1300" width="120" height="70" rx="9"/>
       </g>
       <g transform="translate(60 54)" stroke="none" text-anchor="middle">
-        <text y="0200">A4</text>
+        <text y="0200">A0</text>
         <text y="0300">A3</text>
-        <text y="0400">A2</text>
-        <text y="0500">A13</text>
-        <text y="0600">A7</text>
-        <text y="0700">A9</text>
-        <text y="0800">A1</text>
-        <text y="0900">A0</text>
-        <text y="1000">A10</text>
-        <text y="1100">A6</text>
-        <text y="1200">A11</text>
-        <text y="1300">A12</text>
+        <text y="0400">A6</text>
+        <text y="0500">A7</text>
+        <text y="0600">A4</text>
+        <text y="0700">A5</text>
+        <text y="0800">A18</text>
+        <text y="0900">A19</text>
+        <text y="1000">A17</text>
+        <text y="1100">A16</text>
+        <text y="1200">A15</text>
+        <text y="1300">A14</text>
       </g>
     </g>
 
@@ -353,9 +372,9 @@
         <rect y="1300" width="120" height="70" rx="9"/>
       </g>
       <g transform="translate(60 54)" stroke="none" text-anchor="middle">
-        <text y="1100">A5</text>
-        <text y="1200">A?</text>
-        <text y="1300">A8</text>
+        <text y="1100">A10</text>
+        <text y="1200">A12</text>
+        <text y="1300">A13</text>
       </g>
     </g>
 

@@ -176,21 +176,50 @@ Adjust state transition processing logic to remove unneeded transient states. Si
 
 ## <a name="link_analog_mapping">⚓</a> analog mapping
 
-Figure out which GPIO (digital) pin numbers are associated with each of the analog (A«n») pins used for the standard Arduino analogRead() function. The sketch maps A0 through 13 to the pin numbers. A14 is not defined. This matched to all of the known ADC1 and ADC2 pins, EXCEPT for ADC2 CH2, which is GPIO 2. No A«n» identifier was found for that analog pin.
+Figure out which GPIO (digital) pin numbers are associated with each of the analog (A«n») pins used for the standard Arduino analogRead() function. The sketch maps analog A«n» references to the normal GPIO pin numbers. This mapping is based on the Arduino 'board' definition file being used. It is considerably different for the various DevKit flavours and the Adafruit HUZZAH32 Feature board.
 
-```txt
-A0…13: 26 25 34 39 36 4 14 32 15 33 27 12 13 35
-```
+* DevKit
+  * 36=A0 39=A3 32=A4 33=A5 34=A6 35=A7 4=A10 0=A11 2=A12 15=A13 13=A14 12=A15 14=A16 27=A17 25=A18 26=A19
+  * The sketch shows that A11 maps to GPIO0, which is not available on the DevKit board pins. The data sheet shows that GPIO0 is also ADC2_CH1, RTC_GPIO11, TOUCH1, EMACK_TX_CLI, CLK_OUT1.
+* HUZZAH32
+  * 26=A0 25=A1 34=A2 39=A3 36=A4 4=A5 14=A6 32=A7 15=A8 33=A9 27=A10 12=A11 13=A12 35=A13
 
 ## <a name="link_devkit30_pinout">⚓</a> devkit v1 30 pinout
 
 Create an extended svg version of pinout diagrams found for the 30 pin ESP32 DevKit V1 board. That is often (incorrectly) labeled as the 30 GPIO version. It is really 25 GPIO plus power, ground, and enable pins.
 
+<!-- Adafruit ESP32 Feather (esp32)
+26=A0
+25=A1
+34=A2
+39=A3
+36=A4
+4=A5
+14=A6
+32=A7
+15=A8
+33=A9
+27=A10
+12=A11
+13=A12
+35=A13 -->
+
 <!--
- can not set a good width using standard markdown, so use html instead
+ can not set a good image width using standard markdown, so use html instead
 ![ESP32 DevKit V1 30 pin board pinout](devkit_v1_30_pinout.svg)
  -->
 <img src="devkit_v1_30_pinout.svg" alt="ESP32 DevKit V1 30 pin board pinout" width="100%"/>
+
+For extended information, see "2 Pin Definitions" in the [ESP-WROOM-32 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf). That is the esp32 module used with the DevKit and HUZZAH32 Feather boards.
+
+More information resources.
+
+* [ESP32 Series datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+  * A.1. Notes on ESP32 Pin Lists includes (11) for Ethernet_MAC. No information seen about using it, but gives a bit of description.
+* [ESP32 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_manual_en.pdf)
+  * 10 Ethernet Media Access Controller (MAC)
+* [ESP32 Resources](https://www.espressif.com/en/products/socs/esp32/resources) links to all available ESP32 documents, SDK and tools
+  * Actually, seems to be document titles, not links. Need to do web search to find the documents themselves.
 
 <!-- cSpell:disable -->
 <!-- cSpell:enable -->
