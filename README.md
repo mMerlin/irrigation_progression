@@ -186,6 +186,8 @@ Figure out which GPIO (digital) pin numbers are associated with each of the anal
 
 ## <a name="link_devkit30_pinout">⚓</a> devkit v1 30 pinout
 
+* [ESP32 Pin description «functions»](#link_esp32_pins)
+
 Create an extended svg version of pinout diagrams found for the 30 pin ESP32 DevKit V1 board. That is often (incorrectly) labeled as the 30 GPIO version. It is really 25 GPIO plus power, ground, and enable pins.
 
 <!-- Adafruit ESP32 Feather (esp32)
@@ -210,6 +212,8 @@ Create an extended svg version of pinout diagrams found for the 30 pin ESP32 Dev
  -->
 <img src="devkit_v1_30_pinout.svg" alt="ESP32 DevKit V1 30 pin board pinout" width="100%"/>
 
+<img src="huzzah32_feather_pinout.svg" alt="ESP32 DevKit V1 30 pin board pinout" width="100%"/>
+
 For extended information, see "2 Pin Definitions" in the [ESP-WROOM-32 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf). That is the esp32 module used with the DevKit and HUZZAH32 Feather boards.
 
 More information resources.
@@ -220,6 +224,55 @@ More information resources.
   * 10 Ethernet Media Access Controller (MAC)
 * [ESP32 Resources](https://www.espressif.com/en/products/socs/esp32/resources) links to all available ESP32 documents, SDK and tools
   * Actually, seems to be document titles, not links. Need to do web search to find the documents themselves.
+
+### <a name="link_esp32_pins">⚓</a> ESP32 Pin description «functions»
+
+* [ESP32 Series datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+  * 2.2 Pin Description
+  * A.4. IO_MUX ¦ pin to function multiplexing
+
+#### All of the data (I/O) related ESP32 module pins
+<!-- cSpell:disable -->
+main</br>GPIO | ADC</br>Chn | RTC</br>GPIO | Touch | name | UART | EMAC | more
+---|---|---|---|---|---|---|---
+0 | 2.1 | 11 | 1 | GPIO0 | | TX_CLK | CLK_OUT1
+1 | | | | U0TXT | U0.TXD | RXD2 | CLK_OUT3
+2 | 2.2 | 12 | 2 | | | | HSPIWP, HS2_DATA0, SD_DATA0
+3 | | | | U0RXD | U0.RXD | | CLK_OUT2
+4 | 2.0 | 10 | 0 | GPIO4 | | TX_ER | HSPIHD, HS2_DATA1, SD_DATA1
+5 | | | | GPIO5 | | RX_CLK | HS1_DATA6, VSPICSO
+6 | | | | SD_CLK | U1.CTS | | HS1_CLK, SD_CLK, SPICLK
+7 | | | | SD_DATA_0 | U2.RTS | | HS1_DATA0, SD_DATA0, SPIQ
+8 | | | | SD_DATA_1 | U2.CTS | | HS1_DATA1, SD_DATA1, SPID
+9 | | | | SD_DATA_2 | U1.RXD | | HS1_DATA2, SD_DATA2, SPIHD
+10 | | | | SD_DATA_3 | U1.TXD | | HS1_DATA3, SD_DATA3, SPIWP
+11 | | | | SD_CMD | U1.RTS | | HS1_CMD, SD_CMD, SPICSO
+12 | 2.5 | 15 | 5 | MTDI | | TXD3 | HSPIQ, HS2_DATA2, SD_DATA2, MTDI
+13 | 2.4 | 14 | 4 | MTCK | | RX_ER | HSPID, HS2_DATA3, SD_DATA3, MTCK
+14 | 2.6 | 16 | 6 | MTMS | | TXD2 | HSPICLK, HS2_CLK, SD_CLK, MTMS
+15 | 2.3 | 13 | 3 | MTDO | | RXD3 | HPSICSO, HS2_CMD, SD_CMD, MTDO
+16 | | | | GPIO16 | U2.RXD | CLK_OUT | HS1_DATA4
+17 | | | | GPIO17 | U2.TXD | CLK_OUT_180 | HS1_DATA5
+18 | | | | GPIO18 | | | HS1_DATA7, VSPICLK
+19 | | | | GPIO19 | U0.CTS | TXD0 | VSPIQ
+| | | | | | |
+21 | | | | GPIO21 | | TX_EN | VSPIHD
+22 | | | | GPIO22 | U0.RTS | TXD1 | VSPIWP
+23 | | | | GPIO23 | | | HS1_STROBE, VSPID
+| | | | | | |
+25 | 2.8 | 6 | | GPIO25 | | RXD0 | DAC_1
+26 | 2.9 | 7 | | GPIO26 | | RXD1 | DAC_2
+27 | 2.7 | 17 | 7 | GPIO27 | | RX_DV |
+| | | | | | |
+32 | 1.4 | 9 | 9 | 32K_XP | | | 32.768 kHz crystal oscillator input
+33 | 1.5 | 8 | 8 | 32K_XN | | | 32.768 kHz crystal oscillator output
+34 | 1.6 | 4 | | VDET_1 | | | input only
+35 | 1.7 | 5 | | VDET_2 | | | input only
+36 | 1.0 | 0 | | SENSOR_VP | | | input only
+37 | 1.1 | 1 | | SENSOR_CAPP | | | input only
+38 | 1.2 | 2 | | SENSOR_CAPN | | | input only
+39 | 1.3 | 3 | | SENSOR_VN | | | input only
+<!-- cSpell:enable -->
 
 <!-- cSpell:disable -->
 <!-- cSpell:enable -->
