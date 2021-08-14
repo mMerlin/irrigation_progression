@@ -2,7 +2,7 @@
 <!-- # ESP32 Irrigation automation code -->
 # Irrigation Automation
 
-This repository contains a series of arduino sketches created while exploring the use of an ESP32 board to manage plant watering based on windshield washer pumps and capacitive soil moisture sensors. Each sketch, with supporting files, is stored in its own folder, so that the complete folder can be downloaded directly to an Arduino sketchbook folder, then opened with the IDE. The irrigation repo folder can be treated like an Arduino sketchbook. This is a bit different that the usual git repository, in that "versions" are new folders. Previous versions are still visible in there own folders. This is done to make it easy to browse through the progression, and look at intermediate research.
+This repository contains a series of arduino sketches created while exploring the use of an ESP32 board to manage plant watering based on windshield washer pumps and capacitive soil moisture sensors. Each sketch, with supporting files, is stored in its own folder, so that the complete folder can be downloaded directly to an Arduino sketchbook folder, then opened with the IDE. The irrigation repo folder can be treated like an Arduino sketchbook. This is a bit different than the usual git repository, in that "versions" are new folders. Previous versions are still visible in their own folders. This is done to make it easy to browse through the progression, and look at intermediate research.
 
 The initial sketches loaded here are around reading the sensors and controlling the pump motor. Other exploration sketches exist, but are not uploaded here yet. For connecting to WiFi, setting the ESP32 RTC from internet time, and sending email notifications. SMS notifications work as well, as long as an email to SMS gate is available. Some telephone service providers have an Internet portal available for that, to send SMS to their own customers phones.
 
@@ -16,6 +16,7 @@ Some code blocks «will» also have examples and additional backround informatio
 * [capacitive soil moisture sensor with pump3](#link_pump3)
 * [capacitive soil moisture sensor with pump4](#link_pump4)
 * [capacitive soil moisture sensor with pump5](#link_pump5)
+* [project pin assignments](https://docs.google.com/spreadsheets/d/15oZebEyCOaAFS-5BlYQ_HMpaug-03ncQI8R5PY9P7Rg/edit#gid=0)
 * [pump5](#link_just_pump5)
 * [analog test](#link_analog_test)
 * [watering](#link_watering)
@@ -25,6 +26,7 @@ Some code blocks «will» also have examples and additional backround informatio
 * [pump9](#link_pump9)
 * [analog mapping](#link_analog_mapping)
 * [devkit v1 30 pinout](#link_devkit30_pinout)
+* [adafruit huzzah32 feather pinout](huzzah32_feather_pinout.svg)
 
 <!--
 * [Link](#link_link)
@@ -279,7 +281,7 @@ main</br>GPIO | ADC</br>Chn | RTC</br>GPIO | Touch | name | UART | EMAC | more
 <!--
 # cSpell:disable
 # cSpell:enable
-cSpell:words
+cSpell:words devkit
 cSpell:ignore
 cSpell:enableCompoundWords
 -->
