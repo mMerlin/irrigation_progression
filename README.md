@@ -27,6 +27,7 @@ Some code blocks «will» also have examples and additional backround informatio
 * [analog mapping](#link_analog_mapping)
 * [devkit v1 30 pinout](#link_devkit30_pinout)
 * [adafruit huzzah32 feather pinout](huzzah32_feather_pinout.svg)
+* [notes and constraints](#link_constraints)
 
 <!--
 * [Link](#link_link)
@@ -34,7 +35,8 @@ Some code blocks «will» also have examples and additional backround informatio
 -->
 
 * Features to be implemented, tested, merged
-  * water level reservoir sensor
+  * reservoir water level sensor
+  * configuration profiles in static memory
   * wifi provisioning
   * ntp updating (and repeating)
   * sending email/sms notifications
@@ -45,6 +47,10 @@ Some code blocks «will» also have examples and additional backround informatio
     * configuration
     * status
     * history¦log
+
+## <a name="link_constraints">⚓</a> Constraints
+
+ADC2 can not be used while wi-fi is active. One or the other. Need to shutdown wifi while using analog read from ADC2. ADC1 does not conflict. With the current pin mapping, this affects (at least) the water level sensors.
 
 ## <a name="link_send_text">⚓</a> send text
 

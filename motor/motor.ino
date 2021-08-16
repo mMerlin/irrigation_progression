@@ -14,13 +14,14 @@ const mcpwm_config_t PUMP_CONFIG = {
 const mcpwm_unit_t PUMP_UNIT = MCPWM_UNIT_0;
 const mcpwm_timer_t PUMP_TIMER = MCPWM_TIMER_0;
 const mcpwm_io_signals_t PUMP_IO_1 = MCPWM0A;
-const mcpwm_io_signals_t PUMP_IO_2 = MCPWM0B;
-const int PUMP_GPIO_1 = 32;
-const int PUMP_GPIO_2 = 14;
+//const mcpwm_io_signals_t PUMP_IO_2 = MCPWM0B;
+const int PUMP_GPIO_1 = 19;
+//const int PUMP_GPIO_2 = 14;
 
 void setup() {
+  Serial.begin(115200);
   mcpwm_gpio_init(PUMP_UNIT, PUMP_IO_1, PUMP_GPIO_1);
-  mcpwm_gpio_init(PUMP_UNIT, PUMP_IO_2, PUMP_GPIO_2);
+//  mcpwm_gpio_init(PUMP_UNIT, PUMP_IO_2, PUMP_GPIO_2);
   mcpwm_init(PUMP_UNIT, PUMP_TIMER, &PUMP_CONFIG);
   mcpwm_set_frequency(PUMP_UNIT, PUMP_TIMER, PUMP_CONFIG.frequency);
   mcpwm_set_duty(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_A, 10.0);
@@ -42,18 +43,31 @@ void setup() {
 //   mcpwm_fault_set_oneshot_mode();
 //   mcpwm_fault_set_cyc_mode();
 //   mcpwm_isr_register();
+  delay(500);
+  Serial.println("Start motor test cycle");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   pump1On();
-  delay(1000);
+  pump_state("on");
+  delay(300);
   pumpOff();
-  delay(3000);
-  pump2On();
-  delay(1000);
-  pumpOff();
-  delay(500);
+  pump_state("off");
+  delay(300);
+
+//  pump2On();
+//  delay(1000);
+//  pumpOff();
+//  delay(500);
+}
+
+void pump_state(String state)
+{
+  Serial.print("GPIO ");
+  Serial.print(PUMP_GPIO_1);
+  Serial.print(" is now ");
+  Serial.println(state);
 }
 
 void pump1On()
@@ -64,13 +78,13 @@ void pump1On()
   mcpwm_set_duty_type(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_B, MCPWM_DUTY_MODE_0);
 }
 
-void pump2On()
-{
-  mcpwm_set_signal_low(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_B);
-  mcpwm_set_duty(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_A, 30.0);
-  // mcpwm_set_signal_high(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_B);
-  mcpwm_set_duty_type(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_A, MCPWM_DUTY_MODE_0);
-}
+//void pump2On()
+//{
+//  mcpwm_set_signal_low(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_B);
+//  mcpwm_set_duty(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_A, 30.0);
+//  // mcpwm_set_signal_high(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_B);
+//  mcpwm_set_duty_type(PUMP_UNIT, PUMP_TIMER, MCPWM_OPR_A, MCPWM_DUTY_MODE_0);
+//}
 
 void pumpOff()
 {
